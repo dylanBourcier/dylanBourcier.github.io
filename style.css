@@ -135,6 +135,7 @@ nav {
     padding: 0.625rem 1rem;
     position: relative;
     display: flex;
+    align-items: baseline;
     width: fit-content;
     height: fit-content;
     gap: 0.4rem;
@@ -148,10 +149,15 @@ nav {
     cursor: pointer;
     transition: 0.3s;
 
-    svg path {
-        fill: var(--white-50percent);
-        transition: 0.3s;
 
+    svg {
+        transform: translateY(0.1rem);
+
+        path {
+            stroke: var(--white-50percent);
+            transition: 0.3s;
+
+        }
     }
 }
 
@@ -179,8 +185,35 @@ nav {
     border-color: var(--white);
 
     svg path {
-        fill: var(--white);
+        stroke: var(--white);
     }
+}
+
+.language-switcher {
+    position: absolute;
+    right: 1%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.lang-btn:hover {
+    transform: scale(1.1);
+}
+
+.flag-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
@@ -506,49 +539,75 @@ nav {
             margin-bottom: 0.5rem;
         }
 
-
-        p {
+        .contactLink {
             display: flex;
-            gap: 0.5rem;
-            margin: 0;
-            font-size: 1.25rem;
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex: 1;
             align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
+            justify-content: flex-start;
+            box-sizing: border-box;
             border-left: 1px solid var(--white-30percent);
             border-top: 1px solid var(--white-40percent);
+            border-bottom: 1px solid transparent;
+            border-right: 1px solid transparent;
             background-color: var(--white-3percent);
             box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.17);
-            padding: 1rem;
+            padding-inline: 2rem;
+            padding-block: 1rem;
             backdrop-filter: blur(6px);
             border-radius: 10px;
             color: var(--white);
             font-weight: 400;
-            display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 2rem;
             transition: all 0.3s;
 
+            h3 {
+                transition: all 0.3s;
+            }
+
+            span {
+                color: var(--white-30percent);
+            }
+
+            .contactInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+
+
+            }
+
             svg {
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
+                transition: all 0.8s;
+
+                path {
+                    fill: var(--white);
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+        .contactLink:hover {
+            border: 1px solid var(--white-50percent);
+            box-shadow: var(--white) 0px 0px 8px 0px;
+            transform: translateY(-3px);
+
+            h3 {
+                color: var(--blue);
+                text-shadow: 0px 0px 2px var(--blue);
+            }
+
+            svg {
+                transform: rotate(10deg);
 
                 path {
                     fill: var(--blue);
                 }
             }
-        }
-
-        a:hover {
-            border-top: 1px solid var(--white-50percent);
-            border-left: 1px solid var(--white-40percent);
-            transform: rotate(-1deg) scale(1.03);
-            color: var(--blue);
 
         }
 
@@ -556,14 +615,10 @@ nav {
             display: flex;
             gap: 1rem;
             width: 100%;
+            max-width: 800px;
+            align-self: center;
             justify-content: space-between;
-
-            .separator {
-                width: 100%;
-                height: auto;
-                width: 1px;
-                background-color: var(--white-50percent);
-            }
+            flex-wrap: wrap;
         }
     }
 }
@@ -615,6 +670,7 @@ nav {
     }
 
     #contact {
+
         .contactContainer {
             width: 100%;
 

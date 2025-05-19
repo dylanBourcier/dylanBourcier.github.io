@@ -22,32 +22,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
-    <title>Dylan Bourcier - Portfolio - Fullstack Developer</title>
+    <title data-translate="title">Dylan Bourcier - Portfolio - Fullstack Developer</title>
     <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#home" class="nav-link active" data-translate="home">Home</a></li>
+                <li><a href="#projects" class="nav-link" data-translate="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-translate="skills">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <span class="nav-indicator"></span>
         </nav>
+        <div class="language-switcher">
+            <button id="lang-en" class="lang-btn">
+                <img src="./assets/icons/flags/en.svg" alt="English Flag" class="flag-icon">
+            </button>
+            <button id="lang-fr" class="lang-btn">
+                <img src="./assets/icons/flags/fr.svg" alt="French Flag" class="flag-icon">
+            </button>
+        </div>
     </header>
     <main>
     <section id="home">
         <div class="leftSide">
             <h1><span class="blue">Dylan Bourcier</span>,</h1>
-            <p>Fullstack Developer in training, passionate about building functional and user-friendly websites. I enjoy solving problems, learning new technologies, and turning ideas into working projects.</p>
+            <p data-translate="description">Fullstack Developer in training, passionate about building functional and user-friendly websites. I enjoy solving problems, learning new technologies, and turning ideas into working projects.</p>
             <div class="buttons">
                 <div class="see-more-container">
-                <a class="cta" href="#projects">See more</a>
+                <a class="cta" href="#projects" data-translate="seeMore">See more</a>
                 <img src="./assets/icons/arrow.svg" alt="arrow" class="arrow" loading="lazy">
                 </div>
-                <a class="cta" href="./assets/CV_Dylan_Bourcier.pdf" target="_blank">Download resume <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="cta" href="./assets/CV_Dylan_Bourcier.pdf" target="_blank" data-translate="downloadResume">Download resume <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 15.575C11.8667 15.575 11.7417 15.5543 11.625 15.513C11.5083 15.4717 11.4 15.4007 11.3 15.3L7.7 11.7C7.5 11.5 7.404 11.2667 7.412 11C7.42 10.7333 7.516 10.5 7.7 10.3C7.9 10.1 8.13767 9.996 8.413 9.988C8.68833 9.98 8.92567 10.0757 9.125 10.275L11 12.15V5C11 4.71667 11.096 4.47934 11.288 4.288C11.48 4.09667 11.7173 4.00067 12 4C12.2827 3.99934 12.5203 4.09534 12.713 4.288C12.9057 4.48067 13.0013 4.718 13 5V12.15L14.875 10.275C15.075 10.075 15.3127 9.979 15.588 9.987C15.8633 9.995 16.1007 10.0993 16.3 10.3C16.4833 10.5 16.5793 10.7333 16.588 11C16.5967 11.2667 16.5007 11.5 16.3 11.7L12.7 15.3C12.6 15.4 12.4917 15.471 12.375 15.513C12.2583 15.555 12.1333 15.5757 12 15.575ZM6 20C5.45 20 4.97933 19.8043 4.588 19.413C4.19667 19.0217 4.00067 18.5507 4 18V16C4 15.7167 4.096 15.4793 4.288 15.288C4.48 15.0967 4.71733 15.0007 5 15C5.28267 14.9993 5.52033 15.0953 5.713 15.288C5.90567 15.4807 6.00133 15.718 6 16V18H18V16C18 15.7167 18.096 15.4793 18.288 15.288C18.48 15.0967 18.7173 15.0007 19 15C19.2827 14.9993 19.5203 15.0953 19.713 15.288C19.9057 15.4807 20.0013 15.718 20 16V18C20 18.55 19.8043 19.021 19.413 19.413C19.0217 19.805 18.5507 20.0007 18 20H6Z"/>
                     </svg>
                     </a>
@@ -60,7 +68,7 @@
         </div>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 data-translate="projects">Projects</h2>
         <div class="projectsContainer">
             <div class="projectCard" data-url="https://github.com/dylanBourcier/real-time-forum">
                 <div class="projectImgContainer">
@@ -77,8 +85,8 @@
                         <span class="tag">API</span>
                         <span class="tag">Sqlite</span>
                     </div>
-                    <p>A real-time forum application featuring private messaging capabilities, enabling seamless real-time communication.</p>
-                    <p class="linkGithub">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p data-translate="realTimeDescription">A real-time forum application featuring private messaging capabilities, enabling seamless real-time communication.</p>
+                    <p class="linkGithub" data-translate="githubRepo">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 7L14 2M14 2H10.6667M14 2V5.33333M14 9.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6.66667" stroke="#1C2328" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg></p>
                 </div>
@@ -97,8 +105,8 @@
                         <span class="tag">Css</span>
                         <span class="tag">Docker</span>
                     </div>
-                    <p>Go and SQLite-based web app for posting, commenting, and filtering content with authentication and session management.</p>
-                    <p class="linkGithub">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p data-translate="forumDescription">Go and SQLite-based web app for posting, commenting, and filtering content with authentication and session management.</p>
+                    <p class="linkGithub" data-translate="githubRepo">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 7L14 2M14 2H10.6667M14 2V5.33333M14 9.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6.66667" stroke="#1C2328" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg></p>
                 </div>
@@ -107,7 +115,7 @@
                 <div class="projectImgContainer">
                     <img src="./assets/img/projectsImages/make-your-game-frame.png" alt="Screenshot Star Wars: Invasion" class="projectImg">
                     <video class="projectVideo" muted loop>
-                        <source src="./assets/videos/make-your-game-video.mp4" type="video/mp4">
+                        <source src="./assets/videos/make-your-game-video.mp4" type="video/mp4" data-translate="videoError">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -118,8 +126,8 @@
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
                     </div>
-                    <p>Video game developed in JavaScript vanilla. Space invaders like on the theme of Star Wars</p>
-                    <p class="linkGithub">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p data-translate="MyGDescription">Video game developed in JavaScript vanilla. Space invaders like on the theme of Star Wars</p>
+                    <p class="linkGithub" data-translate="githubRepo">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 7L14 2M14 2H10.6667M14 2V5.33333M14 9.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6.66667" stroke="#1C2328" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg></p>
                 </div>
@@ -128,7 +136,7 @@
                 <div class="projectImgContainer">
                     <img src="./assets/img/projectsImages/groupie-tracker-frame.png" alt="Screenshot Groupie Tracker" class="projectImg">
                     <video class="projectVideo" muted loop>
-                        <source src="./assets/videos/groupie-tracker-video.mp4" type="video/mp4">
+                        <source src="./assets/videos/groupie-tracker-video.mp4" type="video/mp4" data-translate="videoError">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -140,8 +148,8 @@
                         <span class="tag">CSS</span>
                         <span class="tag">API</span>
                     </div>
-                    <p>Go-powered web app that displays music artists, their history, and concert data through interactive visualizations.</p>
-                    <p class="linkGithub">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p data-translate="groupieDescription">Go-powered web app that displays music artists, their history, and concert data through interactive visualizations.</p>
+                    <p class="linkGithub" data-translate="githubRepo">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 7L14 2M14 2H10.6667M14 2V5.33333M14 9.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6.66667" stroke="#1C2328" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg></p>
                 </div>
@@ -157,27 +165,26 @@
                         <span class="tag">CSS</span>
                         <span class="tag">JavaScript</span>
                     </div>
-                    <p>The website you are currently visiting, Developed in HTML/CSS and JavaScript vanilla</p>
-                    <p class="linkGithub">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p data-translate="portfolioDescription">The website you are currently visiting, Developed in HTML/CSS and JavaScript vanilla</p>
+                    <p class="linkGithub" data-translate="githubRepo">Github repository <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 7L14 2M14 2H10.6667M14 2V5.33333M14 9.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6.66667" stroke="#1C2328" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         </p>
                 </div>
             </div>
             <div class="seeMoreBtnContainer">
-            <a href="http://github.com/dylanBourcier" class="cta" id="seeMoreBtn" target="_blank">See more <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_291_249)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C20.565 21.795 24 17.295 24 12C24 5.37 18.63 0 12 0Z"/>
-                </g>
+            <a href="http://github.com/dylanBourcier" class="cta" id="seeMoreBtn" target="_blank"><span data-translate="seeMore">See more</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 7L14 2M14 2H10.6667M14 2V5.33333M14 9.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6.66667" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+                
             </a>
             </div>
         </div>
     </section>
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 data-translate="skills">Skills</h2>
         <div class="skillsCategory">
-            <h3>Languages</h3>
+            <h3 data-translate="languages">Languages</h3>
             <div class="skillsContainer">
                 <div class="skillCard">
                     <img src="./assets/icons/languages/html-icon.svg" alt="HTML" class="skillIcon">
@@ -214,7 +221,7 @@
         </div>
         </div>
         <div class="skillsCategory">
-            <h3>Tools</h3>
+            <h3 data-translate="tools">Tools</h3>
             <div class="skillsContainer">
                 <div class="skillCard">
                     <img src="./assets/icons/tools/vscode-icon.svg" alt="VS Code" class="skillIcon">
@@ -245,57 +252,58 @@
     <section id="contact">
         <h2>Contact</h2>
         <div class="contactContainer">
-        <h3>Interested in working together? Feel free to reach out!</h3>
+        <h3 data-translate="contactSentence">Interested in working together? Feel free to reach out!</h3>
             <div class="contactLinks">
-                <p>
+                <div class="contactLink" data-url="mailto:dylan.bourcier.27@gmail.com">
                     <!-- Email :  -->
-                    <a href="mailto:dylan.bourcier.27@gmail.com">
-                        <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_363_199)">
-                                <path
-                                    d="M2.4 19C1.74 19 1.1752 18.7676 0.7056 18.3029C0.236 17.8382 0.0008 17.2789 0 16.625V2.375C0 1.72187 0.2352 1.16296 0.7056 0.69825C1.176 0.233541 1.7408 0.000791667 2.4 0H21.6C22.26 0 22.8252 0.23275 23.2956 0.69825C23.766 1.16375 24.0008 1.72267 24 2.375V16.625C24 17.2781 23.7652 17.8374 23.2956 18.3029C22.826 18.7684 22.2608 19.0008 21.6 19H2.4ZM12 10.6875L21.6 4.75V2.375L12 8.3125L2.4 2.375V4.75L12 10.6875Z" />
-                            </g>
-                        </svg>
+                    <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_363_199)">
+                            <path
+                                d="M2.4 19C1.74 19 1.1752 18.7676 0.7056 18.3029C0.236 17.8382 0.0008 17.2789 0 16.625V2.375C0 1.72187 0.2352 1.16296 0.7056 0.69825C1.176 0.233541 1.7408 0.000791667 2.4 0H21.6C22.26 0 22.8252 0.23275 23.2956 0.69825C23.766 1.16375 24.0008 1.72267 24 2.375V16.625C24 17.2781 23.7652 17.8374 23.2956 18.3029C22.826 18.7684 22.2608 19.0008 21.6 19H2.4ZM12 10.6875L21.6 4.75V2.375L12 8.3125L2.4 2.375V4.75L12 10.6875Z" />
+                        </g>
+                    </svg>
+                    <div class="contactInfo">
+                        <h3>Email</h3>  
                         <span>
                         dylan.bourcier.27@gmail.com
                         </span>
-                    </a>
-                </p>
-                <div class="separator"></div>
-                <p>
+                    </div>
+                </div>
+                <div class="contactLink" data-url="https://www.linkedin.com/in/dylan-bourcier/">
                     <!-- <span>LinkedIn : </span> -->
-                    <a href="https://www.linkedin.com/in/dylan-bourcier/" target="_blank">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_363_197)">
                                 <path
                                     d="M21.3333 0C22.0406 0 22.7189 0.280951 23.219 0.781048C23.719 1.28115 24 1.95942 24 2.66667V21.3333C24 22.0406 23.719 22.7189 23.219 23.219C22.7189 23.719 22.0406 24 21.3333 24H2.66667C1.95942 24 1.28115 23.719 0.781048 23.219C0.280951 22.7189 0 22.0406 0 21.3333V2.66667C0 1.95942 0.280951 1.28115 0.781048 0.781048C1.28115 0.280951 1.95942 0 2.66667 0H21.3333ZM20.6667 20.6667V13.6C20.6667 12.4472 20.2087 11.3416 19.3936 10.5264C18.5784 9.71128 17.4728 9.25333 16.32 9.25333C15.1867 9.25333 13.8667 9.94667 13.2267 10.9867V9.50667H9.50667V20.6667H13.2267V14.0933C13.2267 13.0667 14.0533 12.2267 15.08 12.2267C15.5751 12.2267 16.0499 12.4233 16.3999 12.7734C16.75 13.1235 16.9467 13.5983 16.9467 14.0933V20.6667H20.6667ZM5.17333 7.41333C5.76742 7.41333 6.33717 7.17733 6.75725 6.75725C7.17733 6.33717 7.41333 5.76742 7.41333 5.17333C7.41333 3.93333 6.41333 2.92 5.17333 2.92C4.57571 2.92 4.00257 3.1574 3.57999 3.57999C3.1574 4.00257 2.92 4.57571 2.92 5.17333C2.92 6.41333 3.93333 7.41333 5.17333 7.41333ZM7.02667 20.6667V9.50667H3.33333V20.6667H7.02667Z" />
                             </g>
                         </svg> 
+                        <div class="contactInfo">
+                        <h3>LinkedIn</h3>
                         <span>
                         dylan-bourcier
                         </span>
-                    </a>
-                </p>
-                <div class="separator"></div>
-                <p>
+                        </div>
+                </div>
+                <div class="contactLink" data-url="https://github.com/dylanBourcier">
                     <!-- <span>GitHub : </span> -->
-                    <a href="https://github.com/dylanBourcier" target="_blank">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_291_249)">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C20.565 21.795 24 17.295 24 12C24 5.37 18.63 0 12 0Z"/>
                             </g>
                         </svg>
+                        <div class="contactInfo">
+                        <h3>GitHub</h3>
                         <span>
                         dylanBourcier
                         </span>
-                    </a>
-                </p>
+                        </div>
+                </div>
             </div>
             </div>
     </section>
     </main>
     <footer>
-        <p>&copy; 2025 Dylan Bourcier - All rights reserved</p>
+        <p data-translate="copyright">&copy; 2025 Dylan Bourcier - All rights reserved</p>
     </footer>
 </body>
 <script type="module" src="index.js"></script>

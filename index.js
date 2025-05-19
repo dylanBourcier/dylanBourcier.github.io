@@ -43,6 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.querySelectorAll(".projectCard").forEach((card) => {
+    const video = card.querySelector(".projectVideo");
+
+    if (video) {
+        card.addEventListener("mouseenter", () => {
+            video.play();
+        });
+
+        card.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0; // Reset the video to the start
+        });
+    }
+
     card.addEventListener("click", (event) => {
         const url = card.getAttribute("data-url");
         if (url) {

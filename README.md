@@ -25,7 +25,7 @@ Bienvenue sur mon portfolio ! Ce site présente mes projets, mes compétences et
 
 ## 📸 Aperçu
 
-![Aperçu du Portfolio](./assets/img/projectsImages/project4.png)  
+![Aperçu du Portfolio](./assets/img/projectsImages/project4.webp)  
 
 ---
 

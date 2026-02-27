@@ -33,7 +33,7 @@ Bienvenue sur mon portfolio ! Ce site présente mes projets, mes compétences et
 
 1. **Cloner le repo**  
    ```sh
-   git clone https://github.com/dylanBourcier/portfolio.git
+   git clone https://github.com/dylanBourcier/dylanBourcier.github.io
    ```
 2. **Ouvrir le fichier `index.html`** dans un navigateur.
 

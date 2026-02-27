@@ -127,9 +127,10 @@ document.querySelectorAll('.contactLink').forEach((link) => {
 document.addEventListener('DOMContentLoaded', () => {
   const langButtons = document.querySelectorAll('.lang-btn');
   const elementsToTranslate = document.querySelectorAll('[data-translate]');
-  const currentLang = localStorage.getItem('lang') || 'en';
+  const currentLang =
+    localStorage.getItem('lang') || document.documentElement.lang || 'en';
 
-  // Set initial language
+  // Set initial language (this will also set <html lang="...">)
   updateLanguage(currentLang);
 
   langButtons.forEach((button) => {
@@ -140,16 +141,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateLanguage(lang) {
+    if (!translations[lang]) return; // safety check
     localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang; // <-- update the <html lang="..."> attribute
+
     elementsToTranslate.forEach((el) => {
       const key = el.getAttribute('data-translate');
-      el.textContent = translations[lang][key];
+      if (key && translations[lang][key] !== undefined) {
+        el.textContent = translations[lang][key];
+      }
     });
 
-    // Update active flag
+    // Update active flag opacity
     langButtons.forEach((btn) => {
       const flag = btn.querySelector('.flag-icon');
-      flag.style.opacity = btn.id === `lang-${lang}` ? '1' : '0.5';
+      if (flag) flag.style.opacity = btn.id === `lang-${lang}` ? '1' : '0.5';
     });
   }
 });

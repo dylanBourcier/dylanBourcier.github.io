@@ -156,7 +156,7 @@ nav {
         transform: translateY(0.1rem);
 
         path {
-            stroke: var(--white-50percent);
+            fill: var(--white-50percent);
             transition: 0.3s;
 
         }
@@ -187,7 +187,7 @@ nav {
     border-color: var(--white);
 
     svg path {
-        stroke: var(--white);
+        fill: var(--white);
     }
 }
 
@@ -205,6 +205,7 @@ nav {
     cursor: pointer;
     padding: 0;
     transition: transform 0.2s ease-in-out;
+
 }
 
 .lang-btn:hover {
@@ -216,6 +217,9 @@ nav {
     height: 24px;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 /* Sections */

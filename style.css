@@ -138,6 +138,7 @@ nav {
     padding: 0.625rem 1rem;
     position: relative;
     display: flex;
+    align-items: baseline;
     width: fit-content;
     height: fit-content;
     gap: 0.4rem;
@@ -151,10 +152,14 @@ nav {
     cursor: pointer;
     transition: 0.3s;
 
-    svg path {
-        fill: var(--white-50percent);
-        transition: 0.3s;
+    svg {
+        transform: translateY(0.1rem);
 
+        path {
+            stroke: var(--white-50percent);
+            transition: 0.3s;
+
+        }
     }
 }
 
@@ -182,8 +187,35 @@ nav {
     border-color: var(--white);
 
     svg path {
-        fill: var(--white);
+        stroke: var(--white);
     }
+}
+
+.language-switcher {
+    position: absolute;
+    right: 1%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.lang-btn:hover {
+    transform: scale(1.1);
+}
+
+.flag-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
